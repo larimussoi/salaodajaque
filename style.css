@@ -1,0 +1,101 @@
+:root{
+    --strong: #663953;
+    --oldPink: #a68089;
+    --grey: #BFB8B0;
+    --beige: #e7e3e2;
+    --text: #222601;
+}
+
+body{
+    background-color: #e7e3e2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+main {
+  flex: 1; 
+}
+
+.navbar-brand {
+  align-items: center; 
+  min-height: 60px;  
+}
+
+.navbar{
+    background-color: var(--oldPink);
+}
+
+.dropdown-menu{
+    background-color: var(--oldPink);
+}
+
+.dropdown-item:hover{
+    background-color: var(--beige);
+    color: var(--text);
+}
+
+.home-title {
+  text-align: center;
+  padding: 40px;
+  color: var(--text);
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  align-items: center;
+  padding: 20px;
+  color: var(--text);
+}
+
+.home-img{
+    width: 100%;    
+    max-width: 400px; 
+    height: auto; 
+}
+
+@media (min-width: 768px) {
+  .home-section {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-text,
+  .home-img {
+    flex: 1; 
+  }
+
+  .home-text {
+    padding-right: 30px; 
+  }
+
+  .home-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.endereco{
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-custom {
+  max-width: 18rem; 
+  width: 100%;
+}
+
+.img-fixed {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.footer{
+    background-color: var(--oldPink);
+    width: 100%;
+    color: var(--text);
+}
