@@ -32,7 +32,11 @@ body {
   background-attachment: fixed;
 }
 
-.sobre-texto {
+.caixa {
+  justify-content: center;
+}
+
+.caixa-texto {
   background: rgba(255,255,255,0.8);
   padding: 20px;
   border-radius: 12px;
@@ -82,13 +86,6 @@ body {
   color: var(--hover);
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text);
-  letter-spacing: 1px;
-}
-
 .home-img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -116,7 +113,4 @@ body {
     text-align: center;
   }
 
-  .section-title {
-    font-size: 1.6rem;
-  }
 }
