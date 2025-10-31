@@ -14,38 +14,7 @@
   font-family: "DM Sans", sans-serif;
 }
 
-body {
-  font-family: "DM Sans", sans-serif;
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  line-height: 1.6;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('img/background.jpg') no-repeat center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.caixa {
-  justify-content: center;
-}
-
-.caixa-texto {
-  background: rgba(255,255,255,0.8);
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: justify;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
+/* Navbar Styles */
 .navbar {
   background-color: var(--nav-footer);
   transition: background-color 0.3s ease;
@@ -86,15 +55,73 @@ body {
   color: var(--hover);
 }
 
-.home-img {
+/* Body and General Styles */
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  line-height: 1.6;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('img/background.jpg') no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.caixa {
+  justify-content: center;
+}
+
+.caixa-texto {
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.servico-card {
+  width: 250px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
 }
 
-.home-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+/* Service Card Styles */
+.servico-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
+.servico-card .card-body {
+  background-color: var(--background);
+}
+
+.servico-card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text);
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Footer Styles */
 .footer {
   background-color: var(--nav-footer);
   color: var(--text);
