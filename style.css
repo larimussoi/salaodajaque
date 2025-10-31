@@ -76,6 +76,9 @@ body {
 
 .caixa {
   justify-content: center;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
 }
 
 .caixa-texto {
@@ -88,6 +91,7 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+/* Service Card Styles */
 .servico-card {
   width: 250px;
   height: 300px;
@@ -97,7 +101,6 @@ body {
   margin: auto;
 }
 
-/* Service Card Styles */
 .container {
   display: flex;
   justify-content: center;
@@ -128,6 +131,12 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.card-text {
+  font-size: 0.9rem;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 /* Footer Styles */
 .footer {
